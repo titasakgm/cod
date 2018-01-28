@@ -1,5 +1,7 @@
 var hi1,hix = [];
 
+var age_id;
+
 var cod,codb,codt;
 var causeofdeath,cod_lists,cod_count;
 
@@ -21,13 +23,13 @@ var dbt,dbt0,dbt1,dbt2,dm1,dm2,dmy,dmn,dmb;
 var acx,acx2,ac1_count;
 var as0,as1;
 
-var btn_save;
+var btn_informer;
 
 $(document).ready(function(){
-  // Save button
-  btn_save = $('#btn_save');
+  // Informer button
+  btn_informer = $('#btn_informer');
 
-  btn_save.unbind('click').bind('click', function(){
+  btn_informer.unbind('click').bind('click', function(){
     msg = cod;
     pid13_id = $("#pid13").val();
     sex_id = $("[name='sex']").val();
@@ -42,9 +44,11 @@ $(document).ready(function(){
     $('#d_date_id').val(d_date_id);
     $('#d_cod_id').val(d_cod_id);
     $('#cod_id').val(cod_id);
-    $('#id_cod').submit();
-
-    return false;
+    //$('#id_cod').submit();
+    
+    // Redirect to #register / #informer
+    window.location.href = '/informers/new'
+    return true;
   });
 
   // Final Cause of Death (cod)

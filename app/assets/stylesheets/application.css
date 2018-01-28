@@ -118,3 +118,8 @@ span#cod_text {
 .center {
   text-align: center;
 }
+
+#register {
+  background-color: yellow;
+  margin-top: 18px;
+}

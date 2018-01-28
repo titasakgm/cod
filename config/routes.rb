@@ -1,5 +1,6 @@
 Dev1::Application.routes.draw do
 
+  resources :informers
   get '/cod' => 'guides#index'
   get '/deaths' => 'guides#index'
 
